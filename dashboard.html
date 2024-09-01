@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
+  <!-- End Font -->
+
+  <!-- icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+  <!-- End icon -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'primary': ['Poppins'],
+            'anton': ['Anton'],
+            'antonio': ['Antonio']
+          },
+          rotate: {
+            '5': '5deg',
+            '2': '2deg',
+          },
+          colors: {
+            primary: '#128f8b',
+            navLeft: '#ff3131',
+            navBg: '#152039',
+            transparentColor: 'rgba(255,255,255,.0)',
+            whiteTransparent: 'rgba(255,255,255,.5)',
+            whiteTransparent3: 'rgba(255,255,255,.3)',
+            primaryTransparent: 'rgba(18,143,139,.7)',
+            yellowCstm: '#ff9b25',
+            yellowWhite: '#febd02',
+            primaryGrad: '#00cfc9',
+            secondGrad: '#157c7c',
+          },
+          spacing: {}
+        }
+      }
+    }
+  </script>
+</head>
+<title>Dashboard</title>
+</head>
+
+<body class="font-primary">
+  <header class="h-screen">
+    <div class="absolute inset-0 z-0 w-full h-screen">
+      <img src="./assets/heroImg.jpg" alt="" class="w-full h-full box-border">
+    </div>
+    <div class="z-10 relative flex flex-col">
+      <!-- navigation -->
+      <nav class="grid grid-cols-3 justify-between bg-gradient-to-b from-white to-transparentColor h-52 z-10">
+        <ul class="grid grid-cols-3 justify-items-center text-center py-5 text-white">
+          <li
+            class="bg-primary w-32 h-8 rounded-full justify-center items-center flex hover:bg-slate-500 cursor-pointer">
+            Home</li>
+          <li class="bg-navBg w-32 h-8 rounded-full justify-center items-center flex hover:bg-slate-500 cursor-pointer">
+            Profil</li>
+          <li class="bg-navBg w-32 h-8 rounded-full justify-center items-center flex hover:bg-slate-500 cursor-pointer">
+            Pendidikan</li>
+        </ul>
+
+        <!-- Logo -->
+        <div>
+          <img src="./assets/logo_utama.png" alt="">
+        </div>
+        <!-- End Logo -->
+
+        <ul class="grid grid-cols-3 justify-items-center text-center py-5 text-white">
+          <li
+            class="bg-navLeft w-32 h-8 rounded-full justify-center items-center flex hover:bg-slate-500 cursor-pointer">
+            Kabar</li>
+          <li class="bg-navBg w-32 h-8 rounded-full justify-center items-center flex hover:bg-slate-500 cursor-pointer">
+            Galery</li>
+          <li class="bg-navBg w-32 h-8 rounded-full justify-center items-center flex hover:bg-slate-500 cursor-pointer">
+            PPDB</li>
+        </ul>
+      </nav>
+      <!-- end navigation  -->
+
+      <!-- Title -->
+      <div
+        class="flex flex-col items-end absolute bg-whiteTransparent3 self-end h-screen rounded-l-full w-[40%] justify-center">
+        <div class=" flex flex-col bg-whiteTransparent w-[90%] h-full items-end rounded-l-full justify-center px-5">
+          <h2 class="text-6xl font-bold line-clamp-2 text-end text-primary">LERARNING VISION</h2>
+          <p class="text-end">
+            “Dengan mengintegrasikan Kurikulum Integral Berbasis Tauhid dalam setiap aspek kurikulum &
+            pembelajaran, mengantarkan setiap murid mengenal siapa tuhannya & nabinya”
+          </p>
+        </div>
+      </div>
+      <!-- End Title -->
+
+    </div>
+
+    <!-- Menu List -->
+    <div class="absolute bottom-[-10%] h-32 self-center px-20 w-full z-30">
+      <ul class="grid grid-cols-5 gap-3">
+        <li
+          class="P-10 bg-primaryTransparent h-32 flex justify-center items-center rounded-lg cursor-pointer hover:bg-primary">
+          <div class="flex flex-col justify-center items-center gap-3">
+            <i class="fa-solid fa-graduation-cap text-white text-6xl"></i>
+            <span class="text-white text-xl">
+              PRESTASI
+            </span>
+          </div>
+        </li>
+        <li
+          class="P-10 bg-primaryTransparent h-32 flex justify-center items-center rounded-lg cursor-pointer hover:bg-primary">
+          <div class="flex flex-col justify-center items-center gap-3">
+            <i class="fa-solid fa-book-open-reader text-white text-6xl"></i>
+            <span class="text-white text-xl">
+              KURIKULUM
+            </span>
+          </div>
+        </li>
+        <li
+          class="P-10 bg-primaryTransparent h-32 flex justify-center items-center rounded-lg cursor-pointer hover:bg-primary">
+          <div class="flex flex-col justify-center items-center gap-3">
+            <i class="fa-solid fa-school-flag text-6xl text-white"></i>
+            <span class="text-white text-xl">
+              PRESTASI
+            </span>
+          </div>
+        </li>
+        <li
+          class="P-10 bg-primaryTransparent h-32 flex justify-center items-center rounded-lg cursor-pointer hover:bg-primary">
+          <div class="flex flex-col justify-center items-center gap-3">
+            <i class="fa-solid fa-users-gear text-white text-6xl"></i>
+            <span class="text-white text-xl">
+              EKSTRAKULIKULER
+            </span>
+          </div>
+        </li>
+        <li
+          class="P-10 bg-primaryTransparent h-32 flex justify-center items-center rounded-lg cursor-pointer hover:bg-primary">
+          <div class="flex flex-col justify-center items-center gap-3">
+            <i class="fa-regular fa-calendar-days text-6xl text-white"></i>
+            <span class="text-white text-xl">
+              JADWAL KEGIATAN
+            </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- End Menu List -->
+
+  </header>
+
+  <!-- Main -->
+
+  <main class="h-screen">
+
+    <!-- Penerimaan Peserta Didik -->
+    <section class="flex flex-col items-center gap-3 pt-20">
+      <section>
+        <h3 class="font-bold text-4xl italic font-anton">
+          PENERIMAAN PESERTA DIDIK BARU
+        </h3>
+        <h6
+          class="bg-gradient-to-b from-yellowCstm to-yellowWhite w-52 rounded-full font-bold text-center italic font-antonio self-center m-auto">
+          Tahun Pelajaran 2025/2026
+        </h6>
+      </section>
+
+      <!-- card -->
+      <section class="text-white">
+        <div class="relative p-4 grid grid-cols-3 gap-5">
+          <div
+            class="bg-gradient-to-b from-primaryGrad to-secondGrad grid grid-cols-3 items-end relative h-48 rounded-3xl mt-20">
+            <div class="absolute flex justify-center items-center w-40">
+              <div class="relative w-full">
+                <img src="./assets/belakang_orang.png" alt="" class="absolute top-0 w-96 z-0">
+                <img src="./assets/smp putri.png" alt="Putri" class="relative w-32 z-10">
+              </div>
+            </div>
+            <div class="col-start-2 col-span-2 self-start px-8 pt-5 w-64">
+              <h6 class="font-primary text-white text-xl font-bold text-start">
+                PAUD-TK
+              </h6>
+              <h6 class="font-primary text-white text-xl font-bold text-start">
+                YAA BUNAYYA
+              </h6>
+              <p class="text-sm">
+                Islamic full day school
+              </p>
+              <p class="w-44 italic text-center">
+                “Excellent with integral character”
+              </p>
+              <button class="flex bg-yellowCstm text-black w-32 rounded-full justify-center items-center gap-3 my-2">
+                <div>
+                  Visit us
+                </div>
+                <i class="fa-solid fa-angles-right "></i>
+              </button>
+              <div class="absolute z-20 bottom-0">
+                <img src="./assets/jaring2.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-gradient-to-b from-primaryGrad to-secondGrad grid grid-cols-3 items-end relative h-48 rounded-3xl mt-20">
+            <div class="absolute flex justify-center items-center w-40">
+              <div class="relative w-full">
+                <img src="./assets/belakang_orang.png" alt="" class="absolute top-0 w-96 z-0">
+                <img src="./assets/smp putri.png" alt="Putri" class="relative w-32 z-10">
+              </div>
+            </div>
+            <div class="col-start-2 col-span-2 self-start px-8 pt-5 w-64">
+              <h6 class="font-primary text-white text-xl font-bold text-start">
+                PAUD-TK
+              </h6>
+              <h6 class="font-primary text-white text-xl font-bold text-start">
+                YAA BUNAYYA
+              </h6>
+              <p class="text-sm">
+                Islamic full day school
+              </p>
+              <p class="w-44 italic text-center">
+                “Excellent with integral character”
+              </p>
+              <button class="flex bg-yellowCstm text-black w-32 rounded-full justify-center items-center gap-3 my-2">
+                <div>
+                  Visit us
+                </div>
+                <i class="fa-solid fa-angles-right "></i>
+              </button>
+              <div class="absolute z-20 bottom-0">
+                <img src="./assets/jaring2.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-gradient-to-b from-primaryGrad to-secondGrad grid grid-cols-3 items-end relative h-48 rounded-3xl mt-20">
+            <div class="absolute flex justify-center items-center w-40">
+              <div class="relative w-full">
+                <img src="./assets/belakang_orang.png" alt="" class="absolute top-0 w-96 z-0">
+                <img src="./assets/smp putri.png" alt="Putri" class="relative w-32 z-10">
+              </div>
+            </div>
+            <div class="col-start-2 col-span-2 self-start px-8 pt-5 w-64">
+              <h6 class="font-primary text-white text-xl font-bold text-start">
+                PAUD-TK
+              </h6>
+              <h6 class="font-primary text-white text-xl font-bold text-start">
+                YAA BUNAYYA
+              </h6>
+              <p class="text-sm">
+                Islamic full day school
+              </p>
+              <p class="w-44 italic text-center">
+                “Excellent with integral character”
+              </p>
+              <button class="flex bg-yellowCstm text-black w-32 rounded-full justify-center items-center gap-3 my-2">
+                <div>
+                  Visit us
+                </div>
+                <i class="fa-solid fa-angles-right "></i>
+              </button>
+              <div class="absolute z-20 bottom-0">
+                <img src="./assets/jaring2.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-gradient-to-b from-primaryGrad to-secondGrad grid grid-cols-3 items-end relative h-48 rounded-3xl mt-20">
+            <div class="absolute flex justify-center items-center w-40">
+              <div class="relative w-full">
+                <img src="./assets/belakang_orang.png" alt="" class="absolute top-0 w-96 z-0">
+                <img src="./assets/smp putri.png" alt="Putri" class="relative w-32 z-10">
+              </div>
+            </div>
+            <div class="col-start-2 col-span-2 self-start px-8 pt-5 w-64">
+              <h6 class="font-primary text-white text-xl font-bold text-start">
+                PAUD-TK
+              </h6>
+              <h6 class="font-primary text-white text-xl font-bold text-start">
+                YAA BUNAYYA
+              </h6>
+              <p class="text-sm">
+                Islamic full day school
+              </p>
+              <p class="w-44 italic text-center">
+                “Excellent with integral character”
+              </p>
+              <button class="flex bg-yellowCstm text-black w-32 rounded-full justify-center items-center gap-3 my-2">
+                <div>
+                  Visit us
+                </div>
+                <i class="fa-solid fa-angles-right "></i>
+              </button>
+              <div class="absolute z-20 bottom-0">
+                <img src="./assets/jaring2.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-gradient-to-b from-primaryGrad to-secondGrad grid grid-cols-3 items-end relative h-48 rounded-3xl mt-20">
+            <div class="absolute flex justify-center items-center w-40">
+              <div class="relative w-full">
+                <img src="./assets/belakang_orang.png" alt="" class="absolute top-0 w-96 z-0">
+                <img src="./assets/smp putri.png" alt="Putri" class="relative w-32 z-10">
+              </div>
+            </div>
+            <div class="col-start-2 col-span-2 self-start px-8 pt-5 w-64">
+              <h6 class="font-primary text-white text-xl font-bold text-start">
+                PAUD-TK
+              </h6>
+              <h6 class="font-primary text-white text-xl font-bold text-start">
+                YAA BUNAYYA
+              </h6>
+              <p class="text-sm">
+                Islamic full day school
+              </p>
+              <p class="w-44 italic text-center">
+                “Excellent with integral character”
+              </p>
+              <button class="flex bg-yellowCstm text-black w-32 rounded-full justify-center items-center gap-3 my-2">
+                <div>
+                  Visit us
+                </div>
+                <i class="fa-solid fa-angles-right "></i>
+              </button>
+              <div class="absolute z-20 bottom-0">
+                <img src="./assets/jaring2.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-gradient-to-b from-primaryGrad to-secondGrad grid grid-cols-3 items-end relative h-48 rounded-3xl mt-20">
+            <div class="absolute flex justify-center items-center w-40">
+              <div class="relative w-full">
+                <img src="./assets/belakang_orang.png" alt="" class="absolute top-0 w-96 z-0">
+                <img src="./assets/smp putri.png" alt="Putri" class="relative w-32 z-10">
+              </div>
+            </div>
+            <div class="col-start-2 col-span-2 self-start px-8 pt-5 w-64">
+              <h6 class="font-primary text-white text-xl font-bold text-start">
+                PAUD-TK
+              </h6>
+              <h6 class="font-primary text-white text-xl font-bold text-start">
+                YAA BUNAYYA
+              </h6>
+              <p class="text-sm">
+                Islamic full day school
+              </p>
+              <p class="w-44 italic text-center">
+                “Excellent with integral character”
+              </p>
+              <button class="flex bg-yellowCstm text-black w-32 rounded-full justify-center items-center gap-3 my-2">
+                <div>
+                  Visit us
+                </div>
+                <i class="fa-solid fa-angles-right "></i>
+              </button>
+              <div class="absolute z-20 bottom-0">
+                <img src="./assets/jaring2.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- card -->
+    </section>
+
+    <!-- End Penerimaan Peserta Didik -->
+
+    <section class="h-screen ">
+      <section class="grid grid-cols-2 h-3/5 relative">
+        <section class="text-primary">
+          <div class="border-2 pl-52 pt-10">
+            <h2 class="text-black text-6xl font-bold">KABAR</h2>
+            <h2 class="text-yellow-400 text-6xl font-bold">TERBARU</h2>
+          </div>
+          <div>
+            <img src="./assets/coret.png" alt="coretan" class="w-96">
+          </div>
+        </section>
+        <section class="grid grid-cols-2 border-2">
+          <div class="w-40 h-40 bg-black rounded-lg absolute left-[55%] bottom-2/4 rotate-5">
+
+          </div>
+          <div class="w-44 h-44 bg-black rounded-lg absolute left-[75%] bottom-1/3 rotate-2">
+
+          </div>
+          <div class="absolute bottom-[-47%] flex left-2/4 w-full">
+            <img src="./assets/3-removebg-preview.png" alt="gambar3">
+          </div>
+        </section>
+
+      </section>
+      <div class="wave-footer bg-primary w-full h-72"></div>
+
+      <!-- Card -->
+      <section class="bg-primary grid grid-cols-7 justify-center items-center">
+        <div class="w-10 h-10 bg-white flex justify-center items-center justify-self-end mr-5 p-2 rounded-full">
+          <i class="fa-solid fa-chevron-left "></i>
+
+        </div>
+        <div class="col-span-5 grid grid-cols-4 gap-5">
+          <div class="w-52 bg-white rounded-3xl overflow-hidden">
+            <div class="rounded-3xl overflow-hidden">
+              <img src="./assets/4311.jpg" alt="">
+            </div>
+            <div class="p-2 text-justify">
+              <div>
+              <h6 class="text-xs font-bold">
+                Imtihan & Nihai’iy & Haflah Akhirussanah
+                SD Integral Hidayatullah Depok
+              </h6>
+            </div>
+            <p class="text-xs">
+              SD Integral Hidayatullah Depok kembali melaksanakan kegiatan Imtihan mtihan & Nihai’iy & Haflah
+              Akhirussanah, 13/05/2024 kegiatan ini merupakan puncak akhir kegiatan pembelajaran murid pada tahun ajaran
+              ini.
+            </p>
+            <button class="bg-yellow-400 text-white text-xs p-2 rounded-full">
+              Read More
+            </button>
+            <div></div>
+            </div>
+          </div>
+          <div class="w-52 bg-white rounded-3xl overflow-hidden">
+            <div class="rounded-3xl overflow-hidden">
+              <img src="./assets/4311.jpg" alt="">
+            </div>
+            <div class="p-2 text-justify">
+              <div>
+              <h6 class="text-xs font-bold">
+                Imtihan & Nihai’iy & Haflah Akhirussanah
+                SD Integral Hidayatullah Depok
+              </h6>
+            </div>
+            <p class="text-xs">
+              SD Integral Hidayatullah Depok kembali melaksanakan kegiatan Imtihan mtihan & Nihai’iy & Haflah
+              Akhirussanah, 13/05/2024 kegiatan ini merupakan puncak akhir kegiatan pembelajaran murid pada tahun ajaran
+              ini.
+            </p>
+            <button class="bg-yellow-400 text-white text-xs p-2 rounded-full">
+              Read More
+            </button>
+            <div></div>
+            </div>
+          </div>
+          <div class="w-52 bg-white rounded-3xl overflow-hidden">
+            <div class="rounded-3xl overflow-hidden">
+              <img src="./assets/4311.jpg" alt="">
+            </div>
+            <div class="p-2 text-justify">
+              <div>
+              <h6 class="text-xs font-bold">
+                Imtihan & Nihai’iy & Haflah Akhirussanah
+                SD Integral Hidayatullah Depok
+              </h6>
+            </div>
+            <p class="text-xs">
+              SD Integral Hidayatullah Depok kembali melaksanakan kegiatan Imtihan mtihan & Nihai’iy & Haflah
+              Akhirussanah, 13/05/2024 kegiatan ini merupakan puncak akhir kegiatan pembelajaran murid pada tahun ajaran
+              ini.
+            </p>
+            <button class="bg-yellow-400 text-white text-xs p-2 rounded-full">
+              Read More
+            </button>
+            <div></div>
+            </div>
+          </div>
+          <div class="w-52 bg-white rounded-3xl overflow-hidden">
+            <div class="rounded-3xl overflow-hidden">
+              <img src="./assets/4311.jpg" alt="">
+            </div>
+            <div class="p-2 text-justify">
+              <div>
+              <h6 class="text-xs font-bold">
+                Imtihan & Nihai’iy & Haflah Akhirussanah
+                SD Integral Hidayatullah Depok
+              </h6>
+            </div>
+            <p class="text-xs">
+              SD Integral Hidayatullah Depok kembali melaksanakan kegiatan Imtihan mtihan & Nihai’iy & Haflah
+              Akhirussanah, 13/05/2024 kegiatan ini merupakan puncak akhir kegiatan pembelajaran murid pada tahun ajaran
+              ini.
+            </p>
+            <button class="bg-yellow-400 text-white text-xs p-2 rounded-full">
+              Read More
+            </button>
+            <div></div>
+            </div>
+          </div>
+        </div>
+        <div class="w-10 h-10 bg-white flex justify-center items-center p-2 rounded-full">
+          <i class="fa-solid fa-chevron-right"></i>
+
+        </div>
+      </section>
+    </section>
+
+  </main>
+</body>
+
+</html>

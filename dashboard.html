@@ -58,11 +58,11 @@
 <body class="font-primary overflow-x-hidden">
   <header class="h-screen">
     <div class="absolute inset-0 z-0 w-full h-screen">
-      <img src="./assets/heroImg.jpg" alt="" class="w-full h-full box-border">
+      <img src="./assets/heroImg.jpg" alt="" class="w-full h-full object-cover">
     </div>
     <div class="z-10 relative flex flex-col">
       <!-- navigation -->
-      <nav class="grid grid-cols-3 justify-between bg-gradient-to-b from-white to-transparentColor h-52 z-10">
+      <nav class="hidden md:grid grid-cols-3 justify-between bg-gradient-to-b from-white to-transparentColor h-52 z-10">
         <ul class="grid grid-cols-3 justify-items-center text-center py-5 text-white">
           <li
             class="bg-primary w-32 h-8 rounded-full justify-center items-center flex hover:bg-slate-500 cursor-pointer">
@@ -93,9 +93,9 @@
 
       <!-- Title -->
       <div
-        class="flex flex-col items-end absolute bg-whiteTransparent3 self-end h-screen rounded-l-full w-[40%] justify-center">
+        class="flex flex-col items-end absolute bg-whiteTransparent3 self-end h-screen rounded-l-full w-[50%] md:w-[40%] justify-center">
         <div class=" flex flex-col bg-whiteTransparent w-[90%] h-full items-end rounded-l-full justify-center px-5">
-          <h2 class="text-6xl font-bold line-clamp-2 text-end text-primary">LERARNING VISION</h2>
+          <h2 class="text-2xl md:text-6xl font-bold line-clamp-2 text-end text-primary">LERARNING VISION</h2>
           <p class="text-end">
             “Dengan mengintegrasikan Kurikulum Integral Berbasis Tauhid dalam setiap aspek kurikulum &
             pembelajaran, mengantarkan setiap murid mengenal siapa tuhannya & nabinya”
@@ -107,13 +107,13 @@
     </div>
 
     <!-- Menu List -->
-    <div class="absolute bottom-[-10%] h-32 self-center px-20 w-full z-30">
-      <ul class="grid grid-cols-5 gap-3">
+    <div class="absolute bottom-[5%] md:bottom-[-10%] h-32 self-center px-5 md:px-20 w-full z-30">
+      <ul class="grid grid-cols-5 gap-2 md:gap-3">
         <li
           class="P-10 bg-primaryTransparent h-32 flex justify-center items-center rounded-lg cursor-pointer hover:bg-primary">
           <div class="flex flex-col justify-center items-center gap-3">
-            <i class="fa-solid fa-graduation-cap text-white text-6xl"></i>
-            <span class="text-white text-xl">
+            <i class="fa-solid fa-graduation-cap text-white text-xl md:text-6xl"></i>
+            <span class="text-white text-[0.6rem] md:text-xl">
               PRESTASI
             </span>
           </div>
@@ -121,8 +121,8 @@
         <li
           class="P-10 bg-primaryTransparent h-32 flex justify-center items-center rounded-lg cursor-pointer hover:bg-primary">
           <div class="flex flex-col justify-center items-center gap-3">
-            <i class="fa-solid fa-book-open-reader text-white text-6xl"></i>
-            <span class="text-white text-xl">
+            <i class="fa-solid fa-book-open-reader text-white text-xl md:text-6xl"></i>
+            <span class="text-white text-[0.6rem] md:text-xl">
               KURIKULUM
             </span>
           </div>
@@ -130,8 +130,8 @@
         <li
           class="P-10 bg-primaryTransparent h-32 flex justify-center items-center rounded-lg cursor-pointer hover:bg-primary">
           <div class="flex flex-col justify-center items-center gap-3">
-            <i class="fa-solid fa-school-flag text-6xl text-white"></i>
-            <span class="text-white text-xl">
+            <i class="fa-solid fa-school-flag text-xl md:text-6xl text-white"></i>
+            <span class="text-white text-[0.6rem] md:text-xl">
               PRESTASI
             </span>
           </div>
@@ -139,8 +139,8 @@
         <li
           class="P-10 bg-primaryTransparent h-32 flex justify-center items-center rounded-lg cursor-pointer hover:bg-primary">
           <div class="flex flex-col justify-center items-center gap-3">
-            <i class="fa-solid fa-users-gear text-white text-6xl"></i>
-            <span class="text-white text-xl">
+            <i class="fa-solid fa-users-gear text-white text-xl md:text-6xl"></i>
+            <span class="text-white text-center text-[0.6rem] md:text-xl">
               EKSTRAKULIKULER
             </span>
           </div>
@@ -148,8 +148,8 @@
         <li
           class="P-10 bg-primaryTransparent h-32 flex justify-center items-center rounded-lg cursor-pointer hover:bg-primary">
           <div class="flex flex-col justify-center items-center gap-3">
-            <i class="fa-regular fa-calendar-days text-6xl text-white"></i>
-            <span class="text-white text-xl">
+            <i class="fa-regular fa-calendar-days text-xl md:text-6xl text-white"></i>
+            <span class="text-white text-center text-[0.6rem] md:text-xl">
               JADWAL KEGIATAN
             </span>
           </div>
@@ -166,8 +166,8 @@
 
     <!-- Penerimaan Peserta Didik -->
     <section class="flex flex-col items-center gap-3 pt-20">
-      <section>
-        <h3 class="font-bold text-4xl italic font-anton">
+      <section class="w-full items-center">
+        <h3 class="font-bold text-4xl italic text-center font-anton">
           PENERIMAAN PESERTA DIDIK BARU
         </h3>
         <h6
@@ -178,7 +178,7 @@
 
       <!-- card -->
       <section class="text-white">
-        <div class="relative p-4 grid grid-cols-3 gap-5">
+        <div class="relative p-4 md:grid  grid-cols-3 md:gap-5">
           <div
             class="bg-gradient-to-b from-primaryGrad to-secondGrad grid grid-cols-3 items-end relative h-48 rounded-3xl mt-20">
             <div class="absolute flex justify-center items-center w-40">
@@ -381,24 +381,24 @@
     <section class="h-screen ">
 
       <!-- Kabar Terbaru -->
-      <section class="grid grid-cols-2 h-3/5 relative">
+      <section class="grid grid-cols-1 md:grid-cols-2 h-3/5 relative">
         <section class="text-primary">
-          <div class="border-2 pl-52 pt-10">
+          <div class="border-2 px-5 md:pl-52 pt-10">
             <h2 class="text-black text-6xl font-bold">KABAR</h2>
             <h2 class="text-yellow-400 text-6xl font-bold">TERBARU</h2>
           </div>
-          <div>
+          <div >
             <img src="./assets/coret.png" alt="coretan" class="w-96">
           </div>
         </section>
         <section class="grid grid-cols-2 border-2">
-          <div class="w-40 h-40 bg-black rounded-lg absolute left-[55%] bottom-2/4 rotate-5">
+          <div class="hidden md:block w-40 h-40 bg-black rounded-lg absolute left-[55%] bottom-2/4 rotate-5">
 
           </div>
-          <div class="w-44 h-44 bg-black rounded-lg absolute left-[75%] bottom-1/3 rotate-2">
+          <div class="hidden md:block w-44 h-44 bg-black rounded-lg absolute left-[75%] bottom-1/3 rotate-2">
 
           </div>
-          <div class="absolute bottom-[-47%] flex left-2/4 w-full">
+          <div class="hidden md:block absolute bottom-[-47%] flex left-2/4 w-full">
             <img src="./assets/3-removebg-preview.png" alt="gambar3">
           </div>
         </section>
@@ -413,7 +413,7 @@
           <i class="fa-solid fa-chevron-left "></i>
 
         </div>
-        <div class="col-span-5 grid grid-cols-4 gap-5">
+        <div class="col-span-5 grid grid-cols-1 md:grid-cols-4 gap-5">
           <div class="w-62 bg-white cursor-pointer shadow-2xl rounded-3xl overflow-hidden">
             <div class="rounded-3xl overflow-hidden">
               <img src="./assets/4311.jpg" alt="">

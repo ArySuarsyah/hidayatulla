@@ -32,6 +32,7 @@
           rotate: {
             '5': '5deg',
             '2': '2deg',
+            'min': '-2deg'
           },
           colors: {
             primary: '#128f8b',
@@ -58,7 +59,7 @@
 <body class="font-primary overflow-x-hidden">
   <header class="h-screen">
     <div class="absolute inset-0 z-0 w-full h-screen">
-      <img src="./assets/heroImg.jpg" alt="" class="w-full h-full object-cover">
+      <img src="./assets/1234.jpg" alt="" class="w-full h-full object-cover">
     </div>
     <div class="z-10 relative flex flex-col">
       <!-- navigation -->
@@ -103,7 +104,6 @@
         </div>
       </div>
       <!-- End Title -->
-
     </div>
 
     <!-- Menu List -->
@@ -161,11 +161,9 @@
   </header>
 
   <!-- Main -->
-
-  <main class="h-screen">
-
+  <main>
     <!-- Penerimaan Peserta Didik -->
-    <section class="flex flex-col items-center gap-3 pt-20">
+    <section class="flex flex-col items-center gap-3 mt-10 pt-20">
       <section class="w-full items-center">
         <h3 class="font-bold text-4xl italic text-center font-anton">
           PENERIMAAN PESERTA DIDIK BARU
@@ -375,15 +373,15 @@
       </section>
       <!-- card -->
     </section>
-
     <!-- End Penerimaan Peserta Didik -->
 
+    <!-- Kabar Terbaru -->
     <section class="h-screen ">
 
       <!-- Kabar Terbaru -->
       <section class="grid grid-cols-1 md:grid-cols-2 h-3/5 relative">
         <section class="text-primary">
-          <div class="border-2 px-5 md:pl-52 pt-10">
+          <div class=" px-5 md:pl-52 pt-10">
             <h2 class="text-black text-6xl font-bold">KABAR</h2>
             <h2 class="text-yellow-400 text-6xl font-bold">TERBARU</h2>
           </div>
@@ -391,7 +389,7 @@
             <img src="./assets/coret.png" alt="coretan" class="w-96">
           </div>
         </section>
-        <section class="grid grid-cols-2 border-2">
+        <section class="grid grid-cols-2">
           <div class="hidden md:block w-40 h-40 bg-black rounded-lg absolute left-[55%] bottom-2/4 rotate-5">
 
           </div>
@@ -404,135 +402,530 @@
         </section>
 
       </section>
-      <div class="wave-footer bg-primary w-full h-72"></div>
-      <!-- Kabar Terbaru -->
+      <div class="wave-footer bg-primary w-full h-32"></div>
+    </section>
+    <!-- Kabar Terbaru -->
 
-      <!-- Card -->
-      <section class="bg-primary grid grid-cols-7 justify-center items-center gap-2">
-        <div class="w-10 h-10 bg-white flex justify-center items-center justify-self-end p-2 rounded-full">
-          <i class="fa-solid fa-chevron-left "></i>
-
-        </div>
-        <div class="col-span-5 grid grid-cols-1 md:grid-cols-4 gap-5">
-          <div class="w-62 bg-white cursor-pointer shadow-2xl rounded-3xl overflow-hidden">
-            <div class="rounded-3xl overflow-hidden">
-              <img src="./assets/4311.jpg" alt="">
-            </div>
-            <div class="p-2 text-justify">
-              <div>
-                <h6 class="text-xs font-bold">
-                  Imtihan & Nihai’iy & Haflah Akhirussanah
-                  SD Integral Hidayatullah Depok
-                </h6>
-              </div>
-              <p class="text-xs">
-                SD Integral Hidayatullah Depok kembali melaksanakan kegiatan Imtihan mtihan & Nihai’iy & Haflah
-                Akhirussanah, 13/05/2024 kegiatan ini merupakan puncak akhir kegiatan pembelajaran murid pada tahun
-                ajaran
-                ini.
-              </p>
-              <button class="bg-yellow-400 text-white text-xs p-2 rounded-full">
-                Read More
-              </button>
-              <div></div>
-            </div>
+    <!-- Card -->
+    <section class="bg-primary flex justify-center items-center gap-2 mt-[-10%] ">
+      <div class="w-10 h-10 bg-white flex justify-center items-center justify-self-end p-2 rounded-full">
+        <i class="fa-solid fa-chevron-left "></i>
+      </div>
+      <div class="col-span-5 flex md:grid grid-cols-1 md:grid-cols-4 gap-5">
+        <div class="w-64 bg-white cursor-pointer shadow-2xl rounded-2xl overflow-hidden">
+          <div class="rounded-2xl  overflow-hidden">
+            <img class="h-[9rem]" src="./assets/4311.jpg" alt="">
           </div>
-          <div class="w-62 bg-white cursor-pointer s rounded-3xl overflow-hidden">
-            <div class="rounded-3xl overflow-hidden">
-              <img src="./assets/4311.jpg" alt="">
+          <div class="p-2 text-justify">
+            <div>
+              <h6 class="text-xs font-bold leading-4">
+                Imtihan & Nihai’iy & Haflah Akhirussanah
+                SD Integral Hidayatullah Depok
+              </h6>
             </div>
-            <div class="p-2 text-justify">
-              <div>
-                <h6 class="text-xs font-bold">
-                  Imtihan & Nihai’iy & Haflah Akhirussanah
-                  SD Integral Hidayatullah Depok
-                </h6>
-              </div>
-              <p class="text-xs">
-                SD Integral Hidayatullah Depok kembali melaksanakan kegiatan Imtihan mtihan & Nihai’iy & Haflah
-                Akhirussanah, 13/05/2024 kegiatan ini merupakan puncak akhir kegiatan pembelajaran murid pada tahun
-                ajaran
-                ini.
-              </p>
-              <button class="bg-yellow-400 text-white text-xs p-2 rounded-full">
-                Read More
-              </button>
-              <div></div>
-            </div>
-          </div>
-          <div class="w-62 bg-white cursor-pointer s rounded-3xl overflow-hidden">
-            <div class="rounded-3xl overflow-hidden">
-              <img src="./assets/4311.jpg" alt="">
-            </div>
-            <div class="p-2 text-justify">
-              <div>
-                <h6 class="text-xs font-bold">
-                  Imtihan & Nihai’iy & Haflah Akhirussanah
-                  SD Integral Hidayatullah Depok
-                </h6>
-              </div>
-              <p class="text-xs">
-                SD Integral Hidayatullah Depok kembali melaksanakan kegiatan Imtihan mtihan & Nihai’iy & Haflah
-                Akhirussanah, 13/05/2024 kegiatan ini merupakan puncak akhir kegiatan pembelajaran murid pada tahun
-                ajaran
-                ini.
-              </p>
-              <button class="bg-yellow-400 text-white text-xs p-2 rounded-full">
-                Read More
-              </button>
-              <div></div>
-            </div>
-          </div>
-          <div class="w-62 bg-white cursor-pointer s rounded-3xl overflow-hidden">
-            <div class="rounded-3xl overflow-hidden">
-              <img src="./assets/4311.jpg" alt="">
-            </div>
-            <div class="p-2 text-justify">
-              <div>
-                <h6 class="text-xs font-bold">
-                  Imtihan & Nihai’iy & Haflah Akhirussanah
-                  SD Integral Hidayatullah Depok
-                </h6>
-              </div>
-              <p class="text-xs">
-                SD Integral Hidayatullah Depok kembali melaksanakan kegiatan Imtihan mtihan & Nihai’iy & Haflah
-                Akhirussanah, 13/05/2024 kegiatan ini merupakan puncak akhir kegiatan pembelajaran murid pada tahun
-                ajaran
-                ini.
-              </p>
-              <button class="bg-yellow-400 text-white text-xs p-2 rounded-full">
-                Read More
-              </button>
-              <div></div>
-            </div>
+            <p class="text-xs mt-2 leading-3">
+              SD Integral Hidayatullah Depok kembali melaksanakan kegiatan Imtihan mtihan & Nihai’iy & Haflah
+              Akhirussanah, 13/05/2024 kegiatan ini merupakan puncak akhir kegiatan pembelajaran murid pada tahun
+              ajaran
+              ini.
+            </p>
+            <button class="bg-yellow-400 text-white text-xs p-2 rounded-full my-2">
+              Read More
+            </button>
+            <div class="text-xs pl-3">May 05, 2024</div>
           </div>
         </div>
-        <div class="w-10 h-10 bg-white flex justify-center items-center p-2 rounded-full">
-          <i class="fa-solid fa-chevron-right"></i>
-
+        <div class="w-64 bg-white cursor-pointer shadow-2xl rounded-2xl overflow-hidden">
+          <div class="rounded-2xl  overflow-hidden">
+            <img class="h-[9rem]" src="./assets/4311.jpg" alt="">
+          </div>
+          <div class="p-2 text-justify">
+            <div>
+              <h6 class="text-xs font-bold leading-4">
+                Imtihan & Nihai’iy & Haflah Akhirussanah
+                SD Integral Hidayatullah Depok
+              </h6>
+            </div>
+            <p class="text-xs mt-2 leading-3">
+              SD Integral Hidayatullah Depok kembali melaksanakan kegiatan Imtihan mtihan & Nihai’iy & Haflah
+              Akhirussanah, 13/05/2024 kegiatan ini merupakan puncak akhir kegiatan pembelajaran murid pada tahun
+              ajaran
+              ini.
+            </p>
+            <button class="bg-yellow-400 text-white text-xs p-2 rounded-full my-2">
+              Read More
+            </button>
+            <div class="text-xs pl-3">May 05, 2024</div>
+          </div>
         </div>
-      </section>
-      <!-- End Card -->
+        <div class="w-64 bg-white cursor-pointer shadow-2xl rounded-2xl overflow-hidden">
+          <div class="rounded-2xl  overflow-hidden">
+            <img class="h-[9rem]" src="./assets/4311.jpg" alt="">
+          </div>
+          <div class="p-2 text-justify">
+            <div>
+              <h6 class="text-xs font-bold leading-4">
+                Imtihan & Nihai’iy & Haflah Akhirussanah
+                SD Integral Hidayatullah Depok
+              </h6>
+            </div>
+            <p class="text-xs mt-2 leading-3">
+              SD Integral Hidayatullah Depok kembali melaksanakan kegiatan Imtihan mtihan & Nihai’iy & Haflah
+              Akhirussanah, 13/05/2024 kegiatan ini merupakan puncak akhir kegiatan pembelajaran murid pada tahun
+              ajaran
+              ini.
+            </p>
+            <button class="bg-yellow-400 text-white text-xs p-2 rounded-full my-2">
+              Read More
+            </button>
+            <div class="text-xs pl-3">May 05, 2024</div>
+          </div>
+        </div>
+        <div class="w-64 bg-white cursor-pointer shadow-2xl rounded-2xl overflow-hidden">
+          <div class="rounded-2xl  overflow-hidden">
+            <img class="h-[9rem]" src="./assets/4311.jpg" alt="">
+          </div>
+          <div class="p-2 text-justify">
+            <div>
+              <h6 class="text-xs font-bold leading-4">
+                Imtihan & Nihai’iy & Haflah Akhirussanah
+                SD Integral Hidayatullah Depok
+              </h6>
+            </div>
+            <p class="text-xs mt-2 leading-3">
+              SD Integral Hidayatullah Depok kembali melaksanakan kegiatan Imtihan mtihan & Nihai’iy & Haflah
+              Akhirussanah, 13/05/2024 kegiatan ini merupakan puncak akhir kegiatan pembelajaran murid pada tahun
+              ajaran
+              ini.
+            </p>
+            <button class="bg-yellow-400 text-white text-xs p-2 rounded-full my-2">
+              Read More
+            </button>
+            <div class="text-xs pl-3">May 05, 2024</div>
+          </div>
+        </div>
+      </div>
+      <div class="w-10 h-10 bg-white flex justify-center items-center p-2 rounded-full">
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+    </section>
+    <!-- End Card -->
 
-      <section>
-        <div class="grid grid-cols-2 ">
-          <div>
-            <div class="bg-yellow-400 w-32 flex justify-center items-center">
+    <!-- Post -->
+    <section class="bg-primary py-10 md:p-20">
+      <section class="bg-white  md:p-10 md:rounded-3xl px-5 md:px-10">
+        <div class="grid grid-cols-2 mb-5">
+          <div class="mt-10 md:mt-0">
+            <div class="bg-yellow-400 w-44 rounded-full font-bold flex justify-center items-center text-2xl p-2">
               LATE POST
             </div>
           </div>
-          <div>
-            <div>
-              <i class="fa-solid fa-magnifying-glass"></i>
+
+          <!-- search -->
+          <div class="border-2 border-primary hidden md:flex items-center px-2 rounded-full gap-3 w-96">
+            <div class="bg-primary w-9 h-9 rounded-full flex justify-center items-center">
+              <i class="fa-solid fa-magnifying-glass text-2xl text-white"></i>
             </div>
-            <input type="text" name="search" id="search1">
+            <input type="text" name="search" id="search1" placeholder="Cari Berita..." class="w-11/12 outline-0">
+          </div>
+          <!-- End search -->
+        </div>
+
+        <!-- Card -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div class="flex gap-4 items-center">
+            <div
+              class="w-48 h-32 bg-center rounded-[20%] overflow-hidden bg-primary box-border flex justify-center items-center">
+              <img src="./assets/1234.jpg" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class=" ">
+              <h4 class="font-bold text-lg tracking-wide leading-6">
+                Tips for Releasing Stress by Going on Vacation
+              </h4>
+              <p class="font-semibold text-slate-400">
+                June 01, 2024
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-center">
+            <div
+              class="w-44 h-32 bg-center rounded-[20%] overflow-hidden bg-primary box-border flex justify-center items-center">
+              <img src="./assets/1234.jpg" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class=" ">
+              <h4 class="font-bold text-lg tracking-wide leading-6">
+                Tips for Releasing Stress by Going on Vacation
+              </h4>
+              <p class="font-semibold text-slate-400">
+                June 01, 2024
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-center">
+            <div
+              class="w-44 h-32 bg-center rounded-[20%] overflow-hidden bg-primary box-border flex justify-center items-center">
+              <img src="./assets/1234.jpg" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class=" ">
+              <h4 class="font-bold text-lg tracking-wide leading-6">
+                Tips for Releasing Stress by Going on Vacation
+              </h4>
+              <p class="font-semibold text-slate-400">
+                June 01, 2024
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-center">
+            <div
+              class="w-44 h-32 bg-center rounded-[20%] overflow-hidden bg-primary box-border flex justify-center items-center">
+              <img src="./assets/1234.jpg" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class="">
+              <h4 class="font-bold text-lg tracking-wide leading-6">
+                Tips for Releasing Stress by Going on Vacation
+              </h4>
+              <p class="font-semibold text-slate-400">
+                June 01, 2024
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-center">
+            <div
+              class="w-44 h-32 bg-center rounded-[20%] overflow-hidden bg-primary box-border flex justify-center items-center">
+              <img src="./assets/1234.jpg" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class=" ">
+              <h4 class="font-bold text-lg tracking-wide leading-6">
+                Tips for Releasing Stress by Going on Vacation
+              </h4>
+              <p class="font-semibold text-slate-400">
+                June 01, 2024
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-center">
+            <div
+              class="w-44 h-32 bg-center rounded-[20%] overflow-hidden bg-primary box-border flex justify-center items-center">
+              <img src="./assets/1234.jpg" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class=" ">
+              <h4 class="font-bold text-lg tracking-wide leading-6">
+                Tips for Releasing Stress by Going on Vacation
+              </h4>
+              <p class="font-semibold text-slate-400">
+                June 01, 2024
+              </p>
+            </div>
+          </div>
+          <div></div>
+        </div>
+        <!-- End Card -->
+      </section>
+    </section>
+    <!-- Post -->
+
+    <!-- Testimoni -->
+    <section class="h-screen relative bg-primary ">
+      <div class="pt-10 flex gap-4 justify-center items-evenly h-72">
+        <h2 class="text-black text-3xl md:text-6xl font-bold">Testimoni</h2>
+        <h2 class="text-yellow-400 text-3xl md:text-6xl font-bold">Orang Tua</h2>
+      </div>
+      <!-- Card -->
+      <section class="bg-yellow-400 p-5 md:p-10 rounded-3xl absolute flex justify-center items-center gap-5 top-32 md:left-16">
+        <div
+          class="w-10 h-10 bg-white flex justify-center items-center justify-self-end p-2 rounded-full cursor-pointer">
+          <i class="fa-solid fa-chevron-left "></i>
+        </div>
+        <div class="flex md:grid grid-cols-4 gap-4">
+          <div
+            class="bg-white h- w-60 rounded-3xl flex flex-col justify-center items-center p-4 gap-3 shadow-2xl cursor-pointer">
+            <div class="h-40 w-40 rounded-full overflow-hidden">
+              <img src="./assets/heroImg.jpg" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class="text-center">
+              <h5 class="font-bold pb-3">
+                Ayang
+              </h5>
+              <p class="text-justify">
+                "Sebagai orang tua, saya sangat puas dengan pelayanan dan pendidikan yang diberikan oleh pihak Pesantren
+                Hidayatullah”
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-white h- w-60 rounded-3xl flex flex-col justify-center items-center p-4 gap-3 shadow-2xl cursor-pointer">
+            <div class="h-40 w-40 rounded-full overflow-hidden">
+              <img src="./assets/heroImg.jpg" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class="text-center">
+              <h5 class="font-bold pb-3">
+                Ayang
+              </h5>
+              <p class="text-justify">
+                "Sebagai orang tua, saya sangat puas dengan pelayanan dan pendidikan yang diberikan oleh pihak Pesantren
+                Hidayatullah”
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-white h- w-60 rounded-3xl flex flex-col justify-center items-center p-4 gap-3 shadow-2xl cursor-pointer">
+            <div class="h-40 w-40 rounded-full overflow-hidden">
+              <img src="./assets/heroImg.jpg" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class="text-center">
+              <h5 class="font-bold pb-3">
+                Ayang
+              </h5>
+              <p class="text-justify">
+                "Sebagai orang tua, saya sangat puas dengan pelayanan dan pendidikan yang diberikan oleh pihak Pesantren
+                Hidayatullah”
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-white h- w-60 rounded-3xl flex flex-col justify-center items-center p-4 gap-3 shadow-2xl cursor-pointer">
+            <div class="h-40 w-40 rounded-full overflow-hidden">
+              <img src="./assets/heroImg.jpg" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class="text-center">
+              <h5 class="font-bold pb-3">
+                Ayang
+              </h5>
+              <p class="text-justify">
+                "Sebagai orang tua, saya sangat puas dengan pelayanan dan pendidikan yang diberikan oleh pihak Pesantren
+                Hidayatullah”
+              </p>
+            </div>
           </div>
         </div>
+        <div
+          class="w-10 h-10 bg-white flex justify-center items-center justify-self-end p-2 rounded-full cursor-pointer">
+          <i class="fa-solid fa-chevron-right "></i>
+        </div>
       </section>
-
+      <!-- end card  -->
     </section>
+    <!-- Testimoni -->
 
+    <!-- Follow us -->
+    <section class="text-primary bg-primary ">
+      <div class="pl-52 pt-10">
+        <h2 class="text-black text-6xl font-bold">Follow Us on</h2>
+        <h2 class="text-yellow-400 text-6xl font-bold">Social Media</h2>
+      </div>
+      <div class="relative py-10">
+        <div class="grid grid-cols-2">
+          <div class="w-52 h-32 bg-black rounded-[20px] absolute left-[50%] bottom-2/3 rotate-min">
+            video/gambar
+          </div>
+          <div class="w-60 h-44 bg-black rounded-[20px] absolute left-[67%] bottom-1 rotate-5">
+            video/gambar
+          </div>
+        </div>
+        <div class="w-12 h-12 bg-white flex justify-center items-center rounded-full absolute right-[32%] bottom-14">
+          <i class="fa-solid fa-play text-yellow-400 text-2xl"></i>
+        </div>
+      </div>
+      <div class="bg-white flex gap-5 px-20 py-10">
+        <div class="w-4/5 border-2 rounded-2xl overflow-hidden">
+          <img src="./assets/1234.jpg" alt="" class="w-full h-full object-cover">
+        </div>
+        <!-- Card -->
+        <div class="grid grid-cols-2 gap-5">
+          <div class="flex gap-4 items-center text-black">
+            <div
+              class="w-32 h-20 bg-center rounded-[20%] overflow-hidden bg-primary box-border flex justify-center items-center">
+              <img src="./assets/1234.jpg" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class=" ">
+              <h4 class="font-bold text-sm tracking-wide leading-loose">
+                Tips for Releasing Stress by Going on Vacation
+              </h4>
+              <p class="font-semibold text-sm text-slate-400">
+                June 01, 2024
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-center text-black">
+            <div
+              class="w-32 h-20 bg-center rounded-[20%] overflow-hidden bg-primary box-border flex justify-center items-center">
+              <img src="./assets/1234.jpg" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class=" ">
+              <h4 class="font-bold text-sm tracking-wide leading-loose">
+                Tips for Releasing Stress by Going on Vacation
+              </h4>
+              <p class="font-semibold text-sm text-slate-400">
+                June 01, 2024
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-center text-black">
+            <div
+              class="w-32 h-20 bg-center rounded-[20%] overflow-hidden bg-primary box-border flex justify-center items-center">
+              <img src="./assets/1234.jpg" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class=" ">
+              <h4 class="font-bold text-sm tracking-wide leading-loose">
+                Tips for Releasing Stress by Going on Vacation
+              </h4>
+              <p class="font-semibold text-sm text-slate-400">
+                June 01, 2024
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-center text-black">
+            <div
+              class="w-32 h-20 bg-center rounded-[20%] overflow-hidden bg-primary box-border flex justify-center items-center">
+              <img src="./assets/1234.jpg" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class=" ">
+              <h4 class="font-bold text-sm tracking-wide leading-loose">
+                Tips for Releasing Stress by Going on Vacation
+              </h4>
+              <p class="font-semibold text-sm text-slate-400">
+                June 01, 2024
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-center text-black">
+            <div
+              class="w-32 h-20 bg-center rounded-[20%] overflow-hidden bg-primary box-border flex justify-center items-center">
+              <img src="./assets/1234.jpg" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class=" ">
+              <h4 class="font-bold text-sm tracking-wide leading-loose">
+                Tips for Releasing Stress by Going on Vacation
+              </h4>
+              <p class="font-semibold text-sm text-slate-400">
+                June 01, 2024
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-center text-black">
+            <div
+              class="w-32 h-20 bg-center rounded-[20%] overflow-hidden bg-primary box-border flex justify-center items-center">
+              <img src="./assets/1234.jpg" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class=" ">
+              <h4 class="font-bold text-sm tracking-wide leading-loose">
+                Tips for Releasing Stress by Going on Vacation
+              </h4>
+              <p class="font-semibold text-sm text-slate-400">
+                June 01, 2024
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- End Card -->
+      </div>
+    </section>
+    <!-- End Follow us -->
+
+    <!-- Mitra -->
+    <section>
+      <div class="pt-10 flex gap-4 justify-center items-evenly pb-14">
+        <h2 class="text-black text-6xl font-bold">Mitra</h2>
+        <h2 class="text-yellow-400 text-6xl font-bold">Hidayatullah</h2>
+      </div>
+      <!-- Mitra Lis -->
+      <div class="flex gap-5 justify-center items-center">
+        <i class="fa-solid fa-chevron-left text-black text-4xl "></i>
+        <!-- List -->
+        <div class="grid grid-cols-6 gap-5">
+          <div class="w-32 h-32 bg-primary">
+
+          </div>
+          <div class="w-32 h-32 bg-primary">
+
+          </div>
+          <div class="w-32 h-32 bg-primary">
+
+          </div>
+          <div class="w-32 h-32 bg-primary">
+
+          </div>
+          <div class="w-32 h-32 bg-primary">
+
+          </div>
+          <div class="w-32 h-32 bg-primary">
+
+          </div>
+        </div>
+        <!-- List -->
+        <i class="fa-solid fa-chevron-right text-black text-4xl "></i>
+      </div>
+      <!-- Mitra List -->
+    </section>
+    <!-- End Mitra -->
   </main>
+
+  <!-- footer -->
+  <footer class="grid grid-cols-4 gap-3 px-10 py-10 mt-10 bg-[#F5F5F5]">
+    <div>
+      <img src="./assets/logo_utama.png" alt="">
+      <h5 class="font-semibold">
+        Alamat:
+      </h5>
+      <p>
+        Jl. Raya Kalimulya Kel. Kalimulya Kec. Cilodong
+        Kota Depok - Jawa Barat
+      </p>
+      <div>
+        <h5 class="font-semibold">
+          Telp:
+        </h5>
+        <p>
+          021-8790 9613
+        </p>
+      </div>
+      <div>
+        <h5 class="font-semibold">
+          Email:
+        </h5>
+        <p>
+          Ypphdepok@gmail.com
+        </p>
+      </div>
+    </div>
+    <div>
+      <h5 class="font-semibold bg-yellow-400 rounded-2xl px-3 w-32 text-center mb-4">
+        Pendidikan
+      </h5>
+      <ul>
+        <li>
+          PAUD-TK Yaa Bunayya
+        </li>
+        <li>
+          SD Integral Hidayatullah
+        </li>
+        <li>
+          SMP Integral Hidayatullah Putra
+        </li>
+        <li>
+          SMP Integral Hidayatullah Putri
+        </li>
+        <li>
+          MA Hidayatullah
+        </li>
+        <li>
+          STIE Hidayatullah
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h5 class="font-semibold bg-yellow-400 rounded-2xl px-3 w-32 text-center mb-4">
+        Register
+      </h5>
+      <h5 class="font-semibold bg-yellow-400 rounded-2xl px-3 w-32 text-center mb-4">
+        Log In
+      </h5>
+    </div>
+    <div>
+      <img src="./assets/download.jfif" alt="" class="w-full h-full object-cover">
+    </div>
+  </footer>
+  <!-- footer -->
 </body>
 
 </html>
